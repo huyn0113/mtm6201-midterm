@@ -7,8 +7,35 @@
     <title>Web Dev Midterm</title>
 </head>
 <body>
-    <header>
+    <!-- This is the banner of the site -->
+    <header class="banner">
+        <!-- Adds resized as well as original logo image -->
 
+        <!-- 480px and above-->
+        <source srcset="images/logo/wonder_sweets-derivatives/wonder_sweets-480_x_377.jpg 1x,
+                        images/logo/wonder_sweets-derivatives/wonder_sweets-800_x_628.jpg 2x,
+                        images/logo/wonder_sweets-derivatives/wonder_sweets-960_x_754.jpg 3x"
+                media="(max-width: 480px)">
+                
+        <!-- 800px and above-->
+        <source srcset="images/logo/wonder_sweets-derivatives/wonder_sweets-800_x_628.jpg 1x,
+                        images/logo/wonder_sweets-derivatives/wonder_sweets-1600_x_1256.jpg 2x,
+                        images/logo/wonder_sweets-derivatives/wonder_sweets-2400_x_1885.jpg 3x"
+                media="(min-width: 800px)">
+
+        <!-- 1200px and above-->
+
+        <!--Placeholder image-->
+        <img    src="images/logo/wonder_sweets.png" 
+                alt="logo for Wonder Sweets">
+
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
