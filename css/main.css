@@ -7,14 +7,7 @@
 /*********** MOBILE LAYOUT | BREAKPOINT OF 480PX ***********/
 
 @media screen and (min-width: 480px) {
-    /* Sizes and sets banner image on top of the site */
-    .banner img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        height: auto;
-        opacity: 0.5;
-        
-    }
+    /* Links and sizes site banner image  | IMAGE IS FROM UNSPLASH.COM */
+    background-image: url();
     
 }
