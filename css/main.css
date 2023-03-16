@@ -7,7 +7,14 @@
 /*********** MOBILE LAYOUT | BREAKPOINT OF 480PX ***********/
 
 @media screen and (min-width: 480px) {
-    /* Links and sizes site banner image  | IMAGE IS FROM UNSPLASH.COM */
-    background-image: url();
+    /* SETS AND SIZES BANNER IMAGE | IMAGE LINKED FROM UNSPLASH.COM */
+    .banner {
+        background-image: url(https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        opacity: 0.6;
+    }
     
 }
