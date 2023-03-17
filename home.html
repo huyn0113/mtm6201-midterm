@@ -39,19 +39,37 @@
     </header>
 <!-- MAIN BODY CONTENT -->
     <main>
-        <!-- Section containing dessert options -->
-        <section class="dessert-options">
-            <div class="carousel-1">
-                <!-- Placeholder image -->
-                <img    src="images/unsplash_images/icecream_cake-derivatives/icecream_cake-360_x_480.jpg" 
-                        alt="image of a cake with fake ice cream on top">
-                <!-- Placeholder image -->
-                <img    src="images/unsplash_images/floating_donuts-derivatives/floating_donuts-353_x_480.jpg" 
-                        alt="image of two donuts being tossed in the air">
-                <!-- Placeholder image -->
-                <img    src="images/unsplash_images/cakepops-derivatives/cakepops-319_x_480.jpg" 
-                        alt="close up image of cake pops">
+        <!-- DESSERT OPTIONS -->
+        <div class="carousel">
+        <div class="dessert-options">
+            <!-- Labels dessert options and selects primary image -->
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2"> 
+            <input type="radio" name="slider" id="item-3">
+                <!-- Dessert images with labels -->
+                <div class="dessert-cards">
+                    <label class="dessert" for="item-1" id="dessert-1">
+                    <img    src="images/unsplash_images/original_images/icecream_cake.jpg" 
+                            alt="Image of a pink cake with a fake ice cream on top">
+                    </label>
+                    <label class="dessert" for="item-2" id="dessert-2">
+                    <img    src="images/unsplash_images/original_images/cakepops.jpg" 
+                            alt="Close up image of cake pops">
+                    </label>
+                    <label class="dessert" for="item-3" id="dessert-3">
+                        <img    src="images/unsplash_images/original_images/floating_donuts.jpg" 
+                                alt="Image of two donuts tossed in the air">
+                    </label>
                 </div>
+        </div>
+        </div>
+
+
+   
+
+
+
+
             <!-- Selection heading title -->
             <h1> Choose Your Type of Dessert! </h1>
             <!-- Paragraphs containing content -->
