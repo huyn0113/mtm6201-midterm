@@ -334,7 +334,18 @@ body nav {
     display: table;
   }
 
-  
+  footer {
+    padding-top: 60%;
+  }
+
+  footer p {
+    text-align: right;
+    color: #585191;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
  
   
 
