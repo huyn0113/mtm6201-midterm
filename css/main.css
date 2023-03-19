@@ -549,3 +549,22 @@ input[type=radio] {
     padding-bottom: 20px;
 }
 
+.team-members h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4rem;
+    background-color: #585191;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.team-members h3 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
