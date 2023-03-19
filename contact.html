@@ -13,8 +13,16 @@
     <title>Web Dev Contact Us Page</title>
 </head>
 <body>
+<!--SKIP LINKS -->
+<div class="skip-container">
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to nav</a></li>
+        <li><a href="#contact">Skip to contact info</a></li>
+        <li><a href="#form">Skip to contact form</a></li>
+    </ul>
+</div>
 <!--HEADER CONTENT -->
-<header class="banner">
+<header class="banner" id="nav">
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
@@ -36,7 +44,7 @@
 </header>
 <!-- MAIN BODY CONTENT -->
     <main>
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <div class="contact-text">
                 <h1>Want to Get in Touch with Us?</h1>
                 <p>We would love to hear from you! To get in touch with us, you can contact us via information below, and we'll make sure to respond as soon as possible. We value your feedback, comments, and inquiries, so don't hesitate to reach out to us with any questions or concerns you may have. Thank you for choosing us, and we look forward to hearing from you soon!</p>
@@ -47,7 +55,7 @@
             </div>
         </div>
             <!--Contact form-->
-            <div class="contact-form">
+            <div class="contact-form" id="form">
                 <form action="contact.html" method="post">
 
                 <label for="name">Your Name</label>

@@ -13,8 +13,17 @@
     <title>Web Dev Midterm Home Page</title>
 </head>
 <body>
+<!--SKIP LINKS -->
+<div class="skip-container">
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to nav</a></li>
+        <li><a href="#dessert">Skip to types of dessert</a></li>
+        <li><a href="#emotions">Skip to mood choices</a></li>
+        <li><a href="#note">Skip to special note</a></li>
+    </ul>
+</div>
 <!--HEADER CONTENT -->
-    <header class="banner">
+    <header class="banner" id="nav">
         <div class="banner-img">
         </div>
         <!-- NAVIGATION BAR -->
@@ -37,7 +46,7 @@
 <!-- MAIN BODY CONTENT -->
     <main>
         <!-- DESSERT OPTIONS -->
-        <div class="carousel clearfix">
+        <div class="carousel" id="dessert">
         <div class="dessert-options">
             <!-- Labels dessert options and selects primary image -->
             <input type="radio" name="slider" id="item-1" checked>
@@ -74,7 +83,7 @@
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
         <!-- Section containing mood options -->
-        <div class="emotion-options">
+        <div class="emotion-options" id="emotions">
             <div class="mood-text">
                 <h1>Choose Your Mood!</h1>
                 <p>Now that you have chosen your type of dessert, how are you feeling?</p>
@@ -104,7 +113,7 @@
                 <p>Get your wonder mood treat now!</p>
             </div>
         </div>
-        <div class="note clearfix">
+        <div class="note" id="note">
             <!-- Placeholder Image -->
             <div class="note-img">
              <img    src="images/unsplash_images/girls_laughing-derivatives/girls_laughing-480_x_293.jpg" 
