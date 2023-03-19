@@ -13,10 +13,14 @@ img {
     width: 100%;
 }
 
-/* Sets custom font for h1 and nav links */
-
+/* Sets custom google font for h1 and nav links */
 h1, a {
     font-family: 'Luckiest Guy', cursive;
+}
+
+/* Sets font for regular paragraps to Arial Narrow */
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*************************** SETS AND SIZES HERO IMAGE | IMAGE SOURCED FROM UNSPLASH.COM ***************************/
@@ -153,6 +157,8 @@ input[type=radio] {
    object-fit: cover;
 }
 
+/* Creates image carousel transitions using translate, scale and z-index */
+
 #item-1:checked ~ .dessert-cards #dessert-3, #item-2:checked ~ .dessert-cards #dessert-1, #item-3:checked ~ .dessert-cards #dessert-2 {
     transform: translate(-90%) scale(.9);
     opacity: .6;
@@ -171,5 +177,29 @@ input[type=radio] {
     z-index: 1;
 }
 
+/*************************** DESSERT OPTION TEXT ***************************/
 
+/* Adds padding to align text */
+.dessert-options-container {
+    padding-top: 600px;
+}
 
+/* Adds background colo to text */
+
+.dessert-options-text {
+    padding: 6%;
+    background-color: #585191;
+}
+
+/* Align text and sets font color */ 
+    .dessert-options-text h1, p {
+        color: white;
+        text-align: center;
+    }
+
+/* Sizes h1 for dessert options */
+.dessert-options-text h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
