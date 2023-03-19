@@ -500,6 +500,10 @@ input[type=radio] {
     margin-top: 10px;
 }
 
+.contact-form ::placeholder {
+    font-size: 1.4rem;
+}
+
 .contact-form textarea {
     height: 200px;
 }
@@ -557,6 +561,7 @@ input[type=radio] {
     background-color: rgba(88, 81, 145, .8);
     padding: 30px;
 }
+
 
 /* Background Story */
 .backstory {
