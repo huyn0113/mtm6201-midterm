@@ -3,6 +3,7 @@
 /*************************** HOMEPAGE ***************************/
 
 /*************************** CONTAINER WRAPPER ***************************/
+
 body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -683,6 +684,39 @@ input[type=radio] {
 
 /*************************** LAPTOP SET UP | 760PX ***************************/
 
-@media screen and (min-width: 760px) {
+
+@media only screen and (min-width: 1020px) {
+
+
+ /*************************** BANNER IMAGE ***************************/   
+
+ /* Changes banner image size */
+ .banner-img {
+    padding: 10%;
+ }
+
+
+/*************************** NAVIGATION  ***************************/
+
+    /* Changes size of logo image */
+    .logo img {
+        width: 400px;
+    }
+
+    /* Uses margin to enhance space between menu links */
+    .navigation-bar li {
+        margin: 40px;
+    
+    }
+
+    .navigation-bar li a {
+        font-size: 3rem;
+    }
+
+    .searchbox input {
+        width: 300px;
+    }
+
+/*************************** CAROUSEL 1  ***************************/
 
 }
