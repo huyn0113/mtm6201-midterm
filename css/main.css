@@ -1,4 +1,4 @@
-/*************************** MOBILE SET UP | 480PX ***************************/
+/*************************** MOBILE SET UP ***************************/
 
 /*************************** HOMEPAGE ***************************/
 
@@ -55,7 +55,7 @@ p {
 }
 
 .logo img {
-    width: 400px;
+    width: 300px;
 }
 
 
@@ -71,7 +71,7 @@ p {
 
 /* Uses margin to enhance space between menu links */
 .navigation-bar li {
-    margin: 30px;
+    margin: 10px;
 }
 
 /* Styles list menu font sizes and adjusts link decoration */ 
@@ -81,8 +81,8 @@ p {
     list-style: none;
     background-color: #EB5160;
     color: white;
-    padding: 20px;
-    border-radius: 20px 30px;
+    padding: 10px;
+    border-radius: 90px;
 }
 
 /* Sets the end point of menu links */
@@ -95,7 +95,7 @@ p {
 .searchbox input {
     border-radius: 10px;
     height: 35px;
-    width: 250px;
+    width: 200x;
     border: 1px solid #EB5160;
 }
 
@@ -259,7 +259,7 @@ input[type=radio] {
 .carousel-2 {
     padding-top: 60px;
     padding-bottom: 60px;
-   
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -270,8 +270,8 @@ input[type=radio] {
 
   /* Targets gallery images and sizes them as squares */
   .carousel-2 img {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border-radius: 20px;
     object-fit: cover;
   
@@ -402,15 +402,19 @@ input[type=radio] {
   .note-img {
     display: grid;
     opacity: 0.8;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
   }
 
   .note-text {
     display: grid;
     padding: 30px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
   }
 
   .note-text h1  {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     padding-top: 30px;
     padding-bottom: 10px;
     color: #EB5160;
@@ -606,12 +610,12 @@ input[type=radio] {
 
 .about-the-team h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 30px;
 }
 
 .about-the-team p {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     line-height: 40px;
     padding-bottom: 20px;
@@ -621,7 +625,7 @@ input[type=radio] {
     color: white;
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: #585191;
     padding: 20px;
     margin-bottom: 20px;
@@ -630,7 +634,7 @@ input[type=radio] {
 .team-members h3 {
     color: white;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Luckiest Guy', cursive;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -639,7 +643,7 @@ input[type=radio] {
 
 .team-members p {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 40px;
     text-align: center;
     padding: 50px;
