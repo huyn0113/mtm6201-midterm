@@ -314,3 +314,38 @@ input[type=radio] {
     margin-bottom: 40px;
   }
 
+  /*************************** FOOTER ***************************/
+
+  .note {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (1fr);
+    gap: 30px;
+    border: 1px solid #EB5160;
+  }
+
+  .note-img {
+    display: grid;
+    opacity: 0.8;
+  }
+
+  .note-text {
+    display: grid;
+    padding: 30px;
+  }
+
+  .note-text h1  {
+    font-size: 2.1rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #EB5160;
+    text-align: left;
+  
+  }
+
+  .note-text p {
+    line-height: 40px;
+    font-size: 1.5rem;
+    color: #EB5160;
+    text-align: left;
+  }
