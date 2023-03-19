@@ -1,5 +1,7 @@
 /*************************** MOBILE SET UP | 480PX ***************************/
 
+/*************************** HOMEPAGE ***************************/
+
 /*************************** CONTAINER WRAPPER ***************************/
 body {
     margin: 0px 0px 0px 0px;
@@ -314,7 +316,7 @@ input[type=radio] {
     margin-bottom: 40px;
   }
 
-  /*************************** FOOTER ***************************/
+  /*************************** NOTE TEXT BOX  ***************************/
 
   .note {
     display: grid;
@@ -349,3 +351,44 @@ input[type=radio] {
     color: #EB5160;
     text-align: left;
   }
+
+  /*************************** FOOTER ***************************/
+
+  footer {
+    padding-top: 50px;
+  }
+
+  footer p {
+    text-align: right;
+    color: #585191;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+/*************************** ABOUT PAGE ***************************/
+
+
+
+/*************************** CONTACT PAGE PAGE ***************************/
+/* Targets contact container and makes it a grid */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (1fr);
+    gap: 30px;
+}
+
+.contact-text {
+    display: grid;
+}
+
+.contact-img {
+    display: grid;
+}
+
+.contact-text p {
+    color: black;
+
+}
