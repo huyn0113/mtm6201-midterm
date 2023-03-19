@@ -15,90 +15,96 @@
 <body>
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
-    <ul class="skip-links">
-        <li><a href="#nav" aria-label="Takes you to navigation bar">Skip to nav</a></li>
-        <li><a href="#about" aria-label="Takes you to about section">Skip to about</a></li>
-        <li><a href="#backstory" aria-label="Takes you to backstory section">Skip to backstory</a></li>
-        <li><a href="#team" aria-label="Takes you to team info">Skip to team info</a></li>
-        <li><a href="#mem1" aria-label="Takes you to team member 1 information">Skip to member 1</a></li>
-        <li><a href="#mem2" aria-label="Takes you to team member 2 information">Skip to member 2</a></li>
-        <li><a href="#mem3" aria-label="Takes you to team member 3 information">Skip to member 3</a></li>
+    <ul class="skip-links" role="list">
+        <li role="listitem"a href="#nav" aria-label="Takes you to navigation bar">Skip to nav</a></li>
+        <li role="listitem"><a href="#about" aria-label="Takes you to about section">Skip to about</a></li>
+        <li role="listitem"><a href="#backstory" aria-label="Takes you to backstory section">Skip to backstory</a></li>
+        <li role="listitem"><a href="#team" aria-label="Takes you to team info">Skip to team info</a></li>
+        <li role="listitem"><a href="#mem1" aria-label="Takes you to team member 1 information">Skip to member 1</a></li>
+        <li role="listitem"><a href="#mem2" aria-label="Takes you to team member 2 information">Skip to member 2</a></li>
+        <li role="listitem"><a href="#mem3" aria-label="Takes you to team member 3 information">Skip to member 3</a></li>
     </ul>
 </div>
 <!--HEADER CONTENT -->
-<header class="banner" id="nav">
+<header class="banner" id="nav" role="banner">
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
-    <nav class="navigation-bar">
-        <ul class="menu-1">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav class="navigation-bar" role="navigation">
+        <ul class="menu-1" role="list">
+            <li role="listitem"><a href="about.html">About</a></li>
+            <li role="listitem"><a href="contact.html">Contact</a></li>
         </ul>
         <div class="logo">
-            <a href="home.html"><img src="images/logo/wonder_sweets.png" alt=""></a>
+            <a href="home.html" role="link">
+                <img    src="images/logo/wonder_sweets.png" 
+                        alt="Logo of Wonder Sweets" 
+                        role="img"></a>
         </div>
-        <ul class="menu-2">
-            <li class="searchbox">
-                <input type="text" placeholder="search...">
+        <ul class="menu-2" role="list">
+            <li class="searchbox" role="listitem">
+                <input type="text" placeholder="search..." role="searchbox">
                 <button type="submit"i class="fa fa-search"></button>
             </li>
         </ul>
     </nav>
 </header>
 <!-- MAIN BODY CONTENT -->
-    <main>
+    <main role="main">
         <div class="about-us" id="about">
             <div class="about-us-content">
                 <div class="about-text">
-                    <h1>About Us!</h1>
-                    <p>Welcome to Wonder Sweets, a bakery founded by Anna who once created delicious treats based on different emotions all from the comfort of her home. She has now expanded her business online and hopes to open her first street store soon! Now a team of three, Wonder Sweets seeks to deliver the best tasting treats that embodies whatever emotions you were feeling at the time of order, or hope to spread!</p>
+                    <h1 role="heading">About Us!</h1>
+                    <p role="text">Welcome to Wonder Sweets, a bakery founded by Anna who once created delicious treats based on different emotions all from the comfort of her home. She has now expanded her business online and hopes to open her first street store soon! Now a team of three, Wonder Sweets seeks to deliver the best tasting treats that embodies whatever emotions you were feeling at the time of order, or hope to spread!</p>
                 </div>
             </div>
         </div>
         <div class="backstory" id="backstory">
             <div class="backstory-content">
-                <h2>Our Story</h2>
-                <p>Anna had always dreamt of owning her own bakery. After years of working in various bakeries and honing her skills, Anna had come up with the concept of customizing your own treats tailored to your emotions. However, she was hesitant on making the commitment to start the business. She opted to take commissions from those around her. Before she knew it, she brought a small customer base! It was about a year ago that she decided to finally take on a team and start a site where we she began to take on orders.</p>
+                <h2 role="heading">Our Story</h2>
+                <p role="text">Anna had always dreamt of owning her own bakery. After years of working in various bakeries and honing her skills, Anna had come up with the concept of customizing your own treats tailored to your emotions. However, she was hesitant on making the commitment to start the business. She opted to take commissions from those around her. Before she knew it, she brought a small customer base! It was about a year ago that she decided to finally take on a team and start a site where we she began to take on orders.</p>
             </div>
         </div>
         <div class="the-team" id="team">
             <div class="about-the-team">
-            <h1>Meet the Team!</h1>
-                    <p>This is the team that's responsible for making your tasty wonder sweets! Everyone on our team has had years of experience and are deeply passionate with the arts of baking.</p>
+            <h1 role="heading">Meet the Team!</h1>
+                    <p role="text">This is the team that's responsible for making your tasty wonder sweets! Everyone on our team has had years of experience and are deeply passionate with the arts of baking.</p>
             </div>
             <div class="team-members">
                 <div class="member-1" id="mem1">
-                    <h2>Anna Hawkins</h2>
-                    <h3>Founder</h3>
+                    <h2 role="heading">Anna Hawkins</h2>
+                    <h3 role="heading">Founder</h3>
                     <!--Placeholder image-->
                     <img src="images/unsplash_images/portrait_of_woman_pastry_chef/portrait_of_woman_pastry_chef-365_x_480.jpg" 
-                        alt="Portrait image of a woman in chef attire">
-                    <p>Hi! My name is Anna and I'm the founder of Wonder Sweets! I am super excited to share my journey of taking on the world by storm with our Wonder Treats. After taking comissions personally, I realized that I had such a great passion for Wonder Sweets and wanted to expand on it. Now here I am along with my team!</p>
+                        alt="Portrait image of a woman in chef attire"
+                        role="img">
+                    <p role="text">Hi! My name is Anna and I'm the founder of Wonder Sweets! I am super excited to share my journey of taking on the world by storm with our Wonder Treats. After taking comissions personally, I realized that I had such a great passion for Wonder Sweets and wanted to expand on it. Now here I am along with my team!</p>
                 </div>
                 <div class="member-2" id="mem2">
-                    <h2>Jamie Preston</h2>
-                    <h3>Head Pastry Chef</h3>
+                    <h2 role="heading">Jamie Preston</h2>
+                    <h3 role="heading">Head Pastry Chef</h3>
                     <!--Placeholder image-->
                     <img src="images/unsplash_images/man_pastry_chef_portrait-derivatives/man_pastry_chef_portrait-320_x_480.jpg" 
-                        alt="Portrait image of a male pastry chef">
-                    <p>Hey there, my name is Jamie and I'm the head pastry chef of Wonder Sweets! I've known Anna ever since we were in high school and we both shared the same passion for baking. When she first brought of the idea of expanding her little business venture, I immediately volunteered myself as the head of the kitchen.</p>
+                        alt="Portrait image of a male pastry chef"
+                        role="img">
+                    <p role="text">Hey there, my name is Jamie and I'm the head pastry chef of Wonder Sweets! I've known Anna ever since we were in high school and we both shared the same passion for baking. When she first brought of the idea of expanding her little business venture, I immediately volunteered myself as the head of the kitchen.</p>
                 </div>
                 <div class="member-3" id="mem3">
-                    <h2>Brandon Cohen</h2>
-                    <h3>Assistant Pastry Chef</h3>
+                    <h2 role="heading">Brandon Cohen</h2>
+                    <h3 role="heading">Assistant Pastry Chef</h3>
                     <img src="images/unsplash_images/happy_guy_holding_milkshake-derivatives/happy_guy_holding_milkshake-319_x_480.jpg" 
-                        alt="Portrait image of a happy guy holding a milkshake out">
-                    <p>Whats up! The name's Brandon and I'm the assistant pastry chef! I heard about Wonder Sweets through word and mouth and found myself super interested in the concept...Did some digging and got in touch with both Anna and Jamie, and now here I am! I've been baking all my life and even attended culinary school for a short while.</p>
+                        alt="Portrait image of a happy guy holding a milkshake out"
+                        role="img">
+                    <p role="text">Whats up! The name's Brandon and I'm the assistant pastry chef! I heard about Wonder Sweets through word and mouth and found myself super interested in the concept...Did some digging and got in touch with both Anna and Jamie, and now here I am! I've been baking all my life and even attended culinary school for a short while.</p>
 
                 </div>
             </div>
         </div>
     </main>
 <!-- FOOTER CONTENT-->
-    <footer>
-        <p>2023 &#169; Wonder Sweets</p>
-        <p><a href="#top">Back to top</a></p>
+    <footer role="contentinfo">
+        <p role="text">2023 &#169; Wonder Sweets</p>
+        <p role="text"><a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>

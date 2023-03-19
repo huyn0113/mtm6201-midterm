@@ -15,38 +15,41 @@
 <body>
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
-    <ul class="skip-links">
-        <li><a href="#nav" aria-label="Takes you to the nav bar">Skip to nav</a></li>
-        <li><a href="#dessert" aria-label="Takes you dessert type options">Skip to types of dessert</a></li>
-        <li><a href="#emotions" aria-label="Takes you to mood choices">Skip to mood choices</a></li>
-        <li><a href="#note" aria-label="Takes you special note section">Skip to special note</a></li>
+    <ul class="skip-links" role="list">
+        <li role="listitem"><a href="#nav" aria-label="Takes you to the nav bar" role="link">Skip to nav</a></li>
+        <li role="listitem"><a href="#dessert" aria-label="Takes you dessert type options" role="link">Skip to types of dessert</a></li>
+        <li role="listitem"><a href="#emotions" aria-label="Takes you to mood choices" role="link">Skip to mood choices</a></li>
+        <li role="listitem"><a href="#note" aria-label="Takes you special note section" role="link">Skip to special note</a></li>
     </ul>
 </div>
 <!--HEADER CONTENT -->
-    <header class="banner" id="nav">
+    <header class="banner" id="nav"  role="banner">
         <div class="banner-img">
         </div>
         <!-- NAVIGATION BAR -->
-        <nav class="navigation-bar">
-            <ul class="menu-1">
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navigation-bar" role="navigation">
+            <ul class="menu-1" role="list">
+                <li role="listitem"><a href="about.html" role="link">About</a></li>
+                <li role="listitem"><a href="contact.html" role="link">Contact</a></li>
             </ul>
             <div class="logo">
-                <a href="home.html"><img src="images/logo/wonder_sweets.png" alt=""></a>
+                <a href="home.html" role="link">
+                    <img    src="images/logo/wonder_sweets.png" 
+                            alt="Logo for Wonder Sweets" 
+                            role="img"></a>
             </div>
-            <ul class="menu-2">
-                <li class="searchbox">
-                    <input type="text" placeholder="search...">
+            <ul class="menu-2" role="list">
+                <li class="searchbox" role="listitem">
+                    <input type="text" placeholder="search..." role="searchbox">
                     <button type="submit"i class="fa fa-search"></button>
                 </li>
             </ul>
         </nav>
     </header>
 <!-- MAIN BODY CONTENT -->
-    <main>
+    <main role="main">
         <!-- DESSERT OPTIONS -->
-        <div class="carousel" id="dessert">
+        <div class="carousel" id="dessert" role="contentinfo">
         <div class="dessert-options">
             <!-- Labels dessert options and selects primary image -->
             <input type="radio" name="slider" id="item-1" checked>
@@ -56,79 +59,86 @@
                 <div class="dessert-cards">
                     <label class="dessert" for="item-1" id="dessert-1">
                     <img    src="images/unsplash_images/original_images/icecream_cake.jpg" 
-                            alt="Image of a pink cake with a fake ice cream on top">
+                            alt="Image of a pink cake with a fake ice cream on top"
+                            role="img">
                     </label>
                     <label class="dessert" for="item-2" id="dessert-2">
                     <img    src="images/unsplash_images/original_images/cakepops.jpg" 
-                            alt="Close up image of cake pops">
+                            alt="Close up image of cake pops"
+                            role="img">
                     </label>
                     <label class="dessert" for="item-3" id="dessert-3">
                         <img    src="images/unsplash_images/original_images/floating_donuts.jpg" 
-                                alt="Image of two donuts tossed in the air">
+                                alt="Image of two donuts tossed in the air"
+                                role="img">
                     </label>
                 </div>
         </div>
         </div>
-        <div class="dessert-options-container">
+        <div class="dessert-options-container" role="contentinfo">
             <div class="dessert-options-text">
                 <!-- Selection heading title -->
-                <h1> Choose Your Type of Dessert! </h1>
+                <h1 role="heading"> Choose Your Type of Dessert! </h1>
                 <!-- Paragraphs containing content -->
-                <p>In order to start off with your personalized emotion-based flavoured treat, please choose the form in which you want it delivered in!</p>
-                <p>To mention, the design of the dessert won't be what is displayed! Based on the emotion chosen, the design will be based on that!</p>
+                <p role="text">In order to start off with your personalized emotion-based flavoured treat, please choose the form in which you want it delivered in!</p>
+                <p role="text">To mention, the design of the dessert won't be what is displayed! Based on the emotion chosen, the design will be based on that!</p>
             </div>
         </div>
         <!-- Arrow icon -->
-        <div class="arrow-icon">
+        <div class="arrow-icon" role="complementary">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
         <!-- Section containing mood options -->
-        <div class="emotion-options" id="emotions">
+        <div class="emotion-options" id="emotions" role="contentinfo">
             <div class="mood-text">
-                <h1>Choose Your Mood!</h1>
-                <p>Now that you have chosen your type of dessert, how are you feeling?</p>
-                <p>What emotion are you looking to feel and taste through your treat?</p>
+                <h1 role="heading">Choose Your Mood!</h1>
+                <p role="text">Now that you have chosen your type of dessert, how are you feeling?</p>
+                <p role="text">What emotion are you looking to feel and taste through your treat?</p>
             </div>
             <div class="carousel-2">
                 <div class="moods">
                     <div class="mood-1">
                         <img    src="images/unsplash_images/original_images/pastel_balloons.jpg" 
-                                alt="A bunch of pastel balloons with happy faces">
+                                alt="A bunch of pastel balloons with happy faces"
+                                role="img">
                     </div>
                     <div class="mood-2">
                         <img    src="images/unsplash_images/original_images/pug_in_outfit.jpg" 
-                                alt="Sad looking pug dressed up in an outfit">
+                                alt="Sad looking pug dressed up in an outfit"
+                                role="img">
                     </div>
                     <div class="mood-3">
                         <img    src="images/unsplash_images/original_images/peeking_cat.jpg" 
-                                alt="Image of frustrated looking cat">
+                                alt="Image of frustrated looking cat"
+                                role="img">
 
                     </div>
                 </div>
             </div>
-            <div class="create">
-                <button type="button">Create!</button>
+            <div class="create" role="button">
+                <button type="button" role="button">Create!</button>
             </div>
             <div class="button-text">
-                <p>Get your wonder mood treat now!</p>
+                <p role="text">Get your wonder mood treat now!</p>
             </div>
         </div>
-        <div class="note" id="note">
+        <div class="note" id="note" role="contentinfo">
             <!-- Placeholder Image -->
             <div class="note-img">
              <img    src="images/unsplash_images/girls_laughing-derivatives/girls_laughing-480_x_293.jpg" 
-                    alt="Two girls laughing outside of a store with drinks in their hands">
+                    alt="Two girls laughing outside of a store with drinks in their hands"
+                    role="img">
             </div>
             <div class="note-text">
-                <h1>Thank you for choosing us!</h1>
-                <p>Our bakery uses the most finest ingredients ensuring that every treat is made with the utmost attention to detail.</p>
+                <h1 role="heading">Thank you for choosing us!</h1>
+                <p role="text">Our bakery uses the most finest ingredients ensuring that every treat is made with the utmost attention to detail.</p>
             </div>
         </div>
     </main>
 <!-- FOOTER CONTENT-->
-    <footer>
-        <p>2023 &#169; Wonder Sweets</p>
-        <p><a href="#top">Back to top</a></p>
+    <footer role="contentinfo">
+        <p role="text">2023 &#169; Wonder Sweets</p>
+        <p role="text"><a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>

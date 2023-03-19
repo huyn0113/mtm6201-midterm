@@ -15,27 +15,30 @@
 <body>
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
-    <ul class="skip-links">
-        <li><a href="#nav" aria-label="Takes you to nav bar">Skip to nav</a></li>
-        <li><a href="#contact" aria-label="Takes you to contact info">Skip to contact info</a></li>
-        <li><a href="#form" aria-label="Takes you to the contact form">Skip to contact form</a></li>
+    <ul class="skip-links" role="list">
+        <li role="listitem"><a href="#nav" aria-label="Takes you to nav bar">Skip to nav</a></li>
+        <li role="listitem"><a href="#contact" aria-label="Takes you to contact info">Skip to contact info</a></li>
+        <li role="listitem"><a href="#form" aria-label="Takes you to the contact form">Skip to contact form</a></li>
     </ul>
 </div>
 <!--HEADER CONTENT -->
-<header class="banner" id="nav">
+<header class="banner" id="nav" role="banner">
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
-    <nav class="navigation-bar">
-        <ul class="menu-1">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav class="navigation-bar" role="navigation">
+        <ul class="menu-1" role="list">
+            <li role="listitem"><a href="about.html">About</a></li>
+            <li role="listitem"><a href="contact.html">Contact</a></li>
         </ul>
         <div class="logo">
-            <a href="home.html"><img src="images/logo/wonder_sweets.png" alt=""></a>
+            <a href="home.html" role="link">
+                <img    src="images/logo/wonder_sweets.png" 
+                        alt="Logo of Wonder Sweets" 
+                        role="img"></a>
         </div>
-        <ul class="menu-2">
-            <li class="searchbox">
+        <ul class="menu-2" role="list">
+            <li class="searchbox" role="listitem">
                 <input type="text" placeholder="search...">
                 <button type="submit"i class="fa fa-search"></button>
             </li>
@@ -43,20 +46,21 @@
     </nav>
 </header>
 <!-- MAIN BODY CONTENT -->
-    <main>
+    <main role="main">
         <div class="contact-info" id="contact">
             <div class="contact-text">
-                <h1>Want to Get in Touch with Us?</h1>
-                <p>We would love to hear from you! To get in touch with us, you can contact us via information below, and we'll make sure to respond as soon as possible. We value your feedback, comments, and inquiries, so don't hesitate to reach out to us with any questions or concerns you may have. Thank you for choosing us, and we look forward to hearing from you soon!</p>
+                <h1 role="heading">Want to Get in Touch with Us?</h1>
+                <p role="text">We would love to hear from you! To get in touch with us, you can contact us via information below, and we'll make sure to respond as soon as possible. We value your feedback, comments, and inquiries, so don't hesitate to reach out to us with any questions or concerns you may have. Thank you for choosing us, and we look forward to hearing from you soon!</p>
             </div>
             <div class="contact-img">
                 <img    src="images/unsplash_images/original_images/pink_and_blue_donuts.jpg" 
-                        alt="Decorated donuts divided into two sides by a pink and blue margin">
+                        alt="Decorated donuts divided into two sides by a pink and blue margin"
+                        role="img">
             </div>
         </div>
             <!--Contact form-->
             <div class="contact-form" id="form">
-                <form action="contact.html" method="post">
+                <form action="contact.html" method="post" role="form">
 
                 <label for="name">Your Name</label>
                 <input type="text" name="yourname" id="name" placeholder="Full Name">
@@ -77,9 +81,9 @@
         </div>
     </main>
 <!-- FOOTER CONTENT-->
-    <footer>
-        <p>2023 &#169; Wonder Sweets</p>
-        <p><a href="#top">Back to top</a></p>
+    <footer role="contentinfo">
+        <p role="text">2023 &#169; Wonder Sweets</p>
+        <p role="text"><a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>
