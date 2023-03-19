@@ -457,6 +457,7 @@ input[type=radio] {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 90px;
 }
 
 /* Centers text over background image */
@@ -465,21 +466,86 @@ input[type=radio] {
     padding: 90px;
 }
 
+/* Changes font size and color and adds padding to h1 */
 .about-us-content h1 {
     font-size: 4rem;
     padding-bottom: 20px;
     color: white;
 }
 
+/* Changes font size, color and adds line height to p */
 .about-us-content p {
     font-size: 2rem;
     line-height: 40px;
     color: white;
 }
 
+/* Adds background color overlay over background image and changes opacity */
 .about-text {
     background-color: rgba(88, 81, 145, .8);
     padding: 30px;
 }
 
+/* Background Story */
+.backstory {
+    padding-bottom: 90px;
+}
+
+/* Aligns container */
+.backstory-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid #d9de9f;
+    border-radius: 250px;
+    padding: 80px;
+}
+
+.backstory-content h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color:  #EB5160;;
+    padding-bottom: 40px;
+    text-decoration: underline
+
+}
+
+.backstory-content p {
+    color:  #EB5160;
+    font-size: 2rem;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+/* About team members */
+.the-team img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 6px solid #d9de9f;
+}
+
+.the-team {
+    background-color: #EB5160;
+}
+
+.about-the-team {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-the-team h1 {
+    color: white;
+    font-size: 5rem;
+    padding-bottom: 30px;
+}
+
+.about-the-team p {
+    font-size: 2rem;
+    color: white;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
 
