@@ -16,7 +16,7 @@
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
     <ul class="skip-links" role="list">
-        <li role="listitem"a href="#nav" aria-label="Takes you to navigation bar">Skip to nav</a></li>
+        <li role="listitem"><a href="#nav" aria-label="Takes you to navigation bar">Skip to nav</a></li>
         <li role="listitem"><a href="#about" aria-label="Takes you to about section">Skip to about</a></li>
         <li role="listitem"><a href="#backstory" aria-label="Takes you to backstory section">Skip to backstory</a></li>
         <li role="listitem"><a href="#team" aria-label="Takes you to team info">Skip to team info</a></li>
@@ -30,20 +30,20 @@
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
-    <nav class="navigation-bar" role="navigation">
-        <ul class="menu-1" role="list">
-            <li role="listitem"><a href="about.html">About</a></li>
-            <li role="listitem"><a href="contact.html">Contact</a></li>
+    <nav class="navigation-bar" role="navigation" >
+        <ul class="menu-1" role="list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <li role="listitem" itemprop="url"><a href="about.html">About</a></li>
+            <li role="listitem" itemprop="url"><a href="contact.html">Contact</a></li>
         </ul>
         <div class="logo">
-            <a href="home.html" role="link">
+            <a href="home.html" role="link" itemscope="image">
                 <img    src="images/logo/wonder_sweets.png" 
                         alt="Logo of Wonder Sweets" 
                         role="img"></a>
         </div>
         <ul class="menu-2" role="list">
-            <li class="searchbox" role="listitem">
-                <input type="text" placeholder="search..." role="searchbox">
+            <li class="searchbox" role="listitem" itemprop="url">
+                <input type="text" placeholder="search...">
                 <button type="submit"i class="fa fa-search"></button>
             </li>
         </ul>
