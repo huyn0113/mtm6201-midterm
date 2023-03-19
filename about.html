@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Web Dev Midterm About Page</title>
 </head>
 <body>
 <!--HEADER CONTENT -->
-<header>
-    <section class="banner">
-        <!-- Displays logo of the brand and site -->
-
-        <!-- Logos resized to different breakpoints and resoulations -->
-
-        <!-- 480PX BREAKPOINT -->
-        <div class="logo-img">
-            <source srcset ="images/logo/wonder_sweets-derivatives/wonder_sweets-480_x_377.png 1x,
-                        images/logo/wonder_sweets-derivatives/wonder_sweets-960_x_754.png 2x,
-                        images/logo/wonder_sweets-derivatives/wonder_sweets-1440_x_1131.png 3x"
-                    media="(min-width: 480px)">
-            <!-- 800PX BREAKPOINT -->
-            <source srcset="images/logo/wonder_sweets-derivatives/wonder_sweets-800_x_628.png 1x,
-                            images/logo/wonder_sweets-derivatives/wonder_sweets-1600_x_1256.png 2x,
-                            images/logo/wonder_sweets-derivatives/wonder_sweets-2400_x_1885.png 3x"
-                    media="(min-width: 800px)">
-            <!-- 1200PX BREAKPOINT -->
-            <source srcset="images/logo/wonder_sweets-derivatives/wonder_sweets-1200_x_942.png 1x,
-                            images/logo/wonder_sweets-derivatives/wonder_sweets-2400_x_1885.png 2x,
-                            images/logo/wonder_sweets-derivatives/wonder_sweets-3600_x_2827.png 3x"
-                    media="(min-width: 1200px)">
-                    
-            <img    src="images/logo/wonder_sweets-derivatives/wonder_sweets-480_x_377.png" 
-                    alt="logo for Wonder Sweets">
+<header class="banner">
+    <div class="banner-img">
+    </div>
+    <!-- NAVIGATION BAR -->
+    <nav class="navigation-bar">
+        <ul class="menu-1">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo">
+            <a href="home.html"><img src="images/logo/wonder_sweets.png" alt=""></a>
         </div>
-        <!-- Creates navigaton bar with unordered list -->
-        <nav class="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- Displays search bar with search button -->
+        <ul class="menu-2">
+            <li class="searchbox">
                 <input type="text" placeholder="search...">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </ul>
-        </nav>
-    </section>
+                <button type="submit"i class="fa fa-search"></button>
+            </li>
+        </ul>
+    </nav>
 </header>
 <!-- MAIN BODY CONTENT -->
     <main>

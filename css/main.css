@@ -1,354 +1,101 @@
-/* BREAKPOINT OF 480px */
+/*************************** MOBILE SET UP | 480PX ***************************/
 
-/* BREAKPOINT OF 800px */
-
-/* BREAKPOINT OF 1200px */
-
-/*********** MOBILE LAYOUT | BREAKPOINT OF 480PX ***********/
-
+/*************************** CONTAINER WRAPPER ***************************/
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     width: 100%;
     box-sizing: border-box;
 }
 
-body nav {
-    font-family: 'Luckiest Guy', cursive;
-
+/* Defaults image width to 100% to contain images within site */
+img {
+    width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-    /************* SETS AND SIZES BANNER IMAGE | IMAGE LINKED FROM UNSPLASH.COM *************/
-    .banner-img {
-        background-image: url(https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        opacity: 0.6;
-        padding: 15%;
+/* Sets custom font for h1 and nav links */
 
-    }
-
-    /************* NAVIGATION BAR *************/
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .menu-list ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    .menu-list a {
-        display: block;
-        text-decoration: none;
-        font-size: 2.5rem;
-    }
-
-    .logo img {
-        width: 350%;
-        height: auto;
-    }
-
-    main {
-        width: 100%;
-        height: 100vh;
-    }
-
-    header {
-        position: relative;
-        width: 100%;
-    }
-
-    .navigation {
-        position: relative;
-        padding: 80px;
-        z-index: 10;
-    }
-
-    .logo {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        top: -50%;
-        left: 35%;
-    }
-
-    .navigation ul {
-        width: 100%;
-        transition: .3s;
-    }
-    
-    /*
-    .navigation ul li:nth-child(2) {
-        margin-right: 320px;
-    }
-
-    .searchbar input {
-        width: 400px;
-        height: 50px;
-        padding: 10px;
-        border-radius: 10px;
-
-        
-    }
-
-    .searchbar i {
-        padding: 17px;
-    }
-    */
-    
-    /************* IMAGE CAROUSEL 1 *************/
-
-    .carousel {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 10px;
-    }
-
-    input[type=radio] {
-        display: none;
-    }
-
-    .dessert {
-      position: absolute;
-      width: 90%;
-      height: auto;
-      left: 0;
-      right: 0;
-      margin: auto;
-      transition: transform .4s ease;
-      cursor: pointer;
-    }
-
-    .dessert-options {
-        width: 100%;
-        max-width: 50%;
-        max-height: 10%;
-        height: 50%;
-        transform-style: preserve-3d;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .dessert-cards {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin-top: -50px;
-        margin-bottom: 20px;
-    }
-
-    .dessert-options img {
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-    }
-
-    #item-1:checked ~ .dessert-cards #dessert-3, #item-2:checked ~ .dessert-cards #dessert-1, #item-3:checked ~ .dessert-cards #dessert-2 {
-        transform: translate(-90%) scale(.9);
-        opacity: .6;
-        z-index: 0;
-    }
-
-    #item-1:checked ~ .dessert-cards #dessert-2, #item-2:checked ~ .dessert-cards #dessert-3, item-3:checked ~ .dessert-cards #dessert-1 {
-        transform: translate(90%) scale(.9);
-        opacity: .6;
-        z-index: 0;
-    }
-
-    #item-1:checked ~ .dessert-cards #dessert-1, #item-2:checked ~ .dessert-cards #dessert-2, #item-3:checked ~ .dessert-cards #dessert-3 {
-        transform: translateX(0) scale(1);
-        opacity: 1;
-        z-index: 1;
-    }
-
-    /*** CLEARFIX ***/
-
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-/************* DESSERT OPTION TEXT *************/
-
-      .dessert-options-container {
-        padding-top: 600px;
-      }
-
-      .dessert-options-text {
-        padding: 6%;
-        width: 100%;
-        background-color: #585191;
-      }
-
-      .dessert-options-text h1, p {
-        color: white;
-        text-align: center;
-      }
-
-      .dessert-options-text h1 {
-        font-size: 5rem;
-        font-family: 'Luckiest Guy', cursive;
-        margin-bottom: 60px;
-        margin-top: 40px;
-      }
-
-      .dessert-options-text p {
-        font-size: 2.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 60px;
-      }
-      
-/************* ARROW ICON *************/
-      .arrow-icon {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 5rem;
-        text-align: center;
-        color: #585191;
-      }
-
-/************* MOOD TEXT *************/
-      .mood-text {
-        text-align: center;
-        color: #EB5160;
-      }
-
-      .mood-text p {
-        color: #EB5160;
-        font-size: 2.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 60px;
-      }
-
-      .mood-text h1 {
-        font-size: 5rem;
-        font-family: 'Luckiest Guy', cursive;
-        margin-bottom: 40px;
-        margin-top: 30px;
-      }
-
-/************* SECOND IMAGE GALLERY | ANIMATE LATER *************/
-
-  .carousel-2 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #d9de9f;
-    border: 2px solid #EB5160;
-    margin: 60px;
-  }
-
-  .carousel-2 img {
-    width: 400px;
-    height: 350px;
-    border-radius: 20px;
-    object-fit: cover;
-  
-  }
-
-  .moods {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .mood-1, .mood-2 {
-    margin-right: 60px;
-  }
-
-  .create {
-    display: block;
-    text-align: center;
-  }
-
-  .create button {
-    width: 350px;
-    height: 100px;
-    border-radius: 20px;
-    font-size: 4rem;
+h1, a {
     font-family: 'Luckiest Guy', cursive;
-    border: none;
+}
+
+/*************************** SETS AND SIZES HERO IMAGE | IMAGE SOURCED FROM UNSPLASH.COM ***************************/
+
+/* Sources background image, centers and sizes it */
+.banner-img {
+    background-image: url(https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    padding: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+/*************************** NAVIGATION BAR ***************************/
+
+/* Centers logo and creates spacing between menu links with justify content*/
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Adjusts logo image size to match mock up */
+.logo {
+    flex: 0 1 40vw;
+    text-align: center;
+}
+
+.logo img {
+    width: 400px;
+}
+
+
+/* Centers menu list items */
+.navigation-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   justify-content: center;
+   flex: 0 1 30vw;
+}
+
+/* Uses margin to enhance space between menu links */
+.navigation-bar li {
+    margin: 30px;
+}
+
+/* Styles list menu font sizes and adjusts link decoration */ 
+.navigation-bar li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    list-style: none;
     background-color: #EB5160;
     color: white;
-    margin-bottom: 50px;
-    
-  }
-
-  .button-text p {
-    text-align: center;
-    color: #EB5160;
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
-  }
-
-  .note {
-    display: block;
-    border: 1px solid #EB5160;
-   
-  }
-
-  .note-img {
-    float: left;
-    padding-right: 50px;
-  }
-
-  .note-text h1 {
-    color: #EB5160;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2.5rem;
-    padding-bottom: 20px;
-  }
-
-  .note-text p {
-    color: #EB5160;
-    font-size: 2rem;
-    text-align: left;
-    line-height: 40px;
-    padding-right: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .note-text {
-    padding: 35px;
-  }
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  footer {
-    padding-top: 60%;
-  }
-
-  footer p {
-    text-align: right;
-    color: #585191;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2rem;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
- 
-  
-
-    
-
+    padding: 20px;
+    border-radius: 20px 30px;
 }
+
+/* Sets the end point of menu links */
+.menu-1 {
+    justify-content: end;
+}
+
+/* Sizes and adjusts searchbox */
+
+.searchbox input {
+    border-radius: 10px;
+    height: 35px;
+    width: 250px;
+    border: 1px solid #EB5160;
+}
+
+.searchbox button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #EB5160;
+}
+
