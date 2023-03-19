@@ -18,9 +18,9 @@ h1, a {
     font-family: 'Luckiest Guy', cursive;
 }
 
-/* Sets font for regular paragraps to Arial Narrow */
+/* Sets font for regular paragraps to Arial */
 p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*************************** SETS AND SIZES HERO IMAGE | IMAGE SOURCED FROM UNSPLASH.COM ***************************/
@@ -157,6 +157,10 @@ input[type=radio] {
    object-fit: cover;
 }
 
+.dessert img {
+    box-shadow: 0px 0px 30px 0px rgba(81, 81, 81, 0.47);
+}
+
 /* Creates image carousel transitions using translate, scale and z-index */
 
 #item-1:checked ~ .dessert-cards #dessert-3, #item-2:checked ~ .dessert-cards #dessert-1, #item-3:checked ~ .dessert-cards #dessert-2 {
@@ -181,13 +185,13 @@ input[type=radio] {
 
 /* Adds padding to align text */
 .dessert-options-container {
-    padding-top: 600px;
+    padding-top: 505px;
 }
 
 /* Adds background colo to text */
 
 .dessert-options-text {
-    padding: 6%;
+    padding: 5%;
     background-color: #585191;
 }
 
@@ -201,5 +205,112 @@ input[type=radio] {
 .dessert-options-text h1 {
     font-size: 3rem;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
+
+/* Sizes paragraph for dessert options */
+.dessert-options-text p {
+    font-size: 2.1rem;
+    line-height: 40px;
+}
+
+/*************************** ARROW ICON ***************************/
+
+/* Sizes, colors and centers arrow icon */
+.arrow-icon {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 4rem;
+    text-align: center;
+    color: #585191;
+}
+
+/*************************** MOOD TEXT ***************************/
+
+/* Aligns text to center */
+.mood-text {
+    text-align: center;
+    color: #EB5160;
+}
+
+/* Sizes and colors paragraph text */
+.mood-text p {
+    color: #EB5160;
+    font-size: 2.1rem;
+    line-height: 40px;
+}
+
+/* Sizes and colors h1 */
+.mood-text h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/*************************** IMAGE GALLERY ***************************/
+
+/* Targets gallery and sets flex, padding, border and background color */
+.carousel-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9de9f;
+    border: 2px solid #EB5160;
+    margin: 60px;
+  }
+
+  /* Targets gallery images and sizes them as squares */
+  .carousel-2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+  
+  }
+
+  /* Targets container to make images align themselves side-by-side */
+  .moods {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Adds margins to creates spacing between images */
+  .mood-1, .mood-2 {
+    margin-right: 60px;
+  }
+
+/*************************** CREATE BUTTON ***************************/
+
+/* Sets button container as a block and aligns it to the center */
+.create {
+    display: block;
+    text-align: center;
+  }
+
+/* Customizes button appearance */
+  .create button {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    border: none;
+    background-color: #EB5160;
+    color: white;
+    margin-bottom: 40px;
+    
+  }
+
+  /* Customizes paragraph appearance and aligns it to center */
+  .button-text p {
+    text-align: center;
+    color: #EB5160;
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+  }
+
