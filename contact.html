@@ -66,7 +66,17 @@
             </div>
             <!-- Div containing contact image -->
             <div class="contact-img">
-                <img    src="images/unsplash_images/original_images/pink_and_blue_donuts.jpg" 
+                <!-- 770px and below  -->
+                <source srcset="images/unsplash_images/pink_and_blue_donuts-derivatives/pink_and_blue_donuts-513_x_770.jpg 1x,
+                                images/unsplash_images/pink_and_blue_donuts-derivatives/pink_and_blue_donuts-1026_x_1540.jpg 2x"
+                                media="(max-width: 700px)">
+
+                <!-- 1020px and above  -->
+                <source srcset="images/unsplash_images/pink_and_blue_donuts-derivatives/pink_and_blue_donuts-680_x_1020.jpg 1x,
+                                images/unsplash_images/pink_and_blue_donuts-derivatives/pink_and_blue_donuts-1360_x_2040.jpg 2x"
+                                media="(min-width: 1020px)">
+                <!-- Fallback image -->
+                <img    src="images/unsplash_images/pink_and_blue_donuts-derivatives/pink_and_blue_donuts-513_x_770.jpg" 
                         alt="Decorated donuts divided into two sides by a pink and blue margin"
                         role="img">
             </div>
