@@ -28,7 +28,7 @@ p {
 
 /*************************** SETS AND SIZES HERO IMAGE | IMAGE SOURCED FROM UNSPLASH.COM ***************************/
 
-/* Sources background image, centers and sizes it */
+/* Sources background image, centers, sizes it to fit, stay contained, not repeat and lowers opacity */
 .banner-img {
     background-image: url(https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     padding: 15%;
@@ -49,18 +49,19 @@ p {
     width: 100%;
 }
 
-/* Adjusts logo image size to match mock up */
+/* Uses flex to center logo image */
 .logo {
     flex: 0 1 40vw;
     text-align: center;
 }
 
+/* Targets logo image and adjusts sizing using width property */
 .logo img {
     width: 300px;
 }
 
 
-/* Centers menu list items */
+/* Targets unordered list contained by navigation-bar class and aligns it around logo image */
 .navigation-bar ul {
     list-style: none;
     padding: 0;
@@ -70,12 +71,12 @@ p {
    flex: 0 1 30vw;
 }
 
-/* Uses margin to enhance space between menu links */
+/* Uses margin to enhance space between nav links */
 .navigation-bar li {
     margin: 10px;
 }
 
-/* Styles list menu font sizes and adjusts link decoration */ 
+/* Styles list menu font sizes and adjusts link decoration, such as font color, background color and font size */ 
 .navigation-bar li a {
     font-size: 1.8rem;
     text-decoration: none;
@@ -91,8 +92,7 @@ p {
     justify-content: end;
 }
 
-/* Sizes and adjusts searchbox */
-
+/* Sizes and adjusts searchbox as well as adding a pink rounded border */
 .searchbox input {
     border-radius: 10px;
     height: 35px;
@@ -100,6 +100,7 @@ p {
     border: 1px solid #EB5160;
 }
 
+/* Repeats the same border outline for the search bar icon */
 .searchbox button {
     padding: 10px;
     border-radius: 10px;
@@ -108,7 +109,7 @@ p {
 
 /*************************** IMAGE CAROUSEL 1 ***************************/
 
-/* Targets image container and centers images */
+/* Targets image container and centers images using flex, padding, align items and justify content */
 .carousel {
     display: flex;
     align-items: center;
@@ -121,7 +122,7 @@ input[type=radio] {
     display: none;
 }
 
-/* Positions image carousel on site */
+/* Positions image carousel on site, adds transition transform timing and custom cursor when hovering over images */
 .dessert {
     position: absolute;
     height: auto;
@@ -132,7 +133,7 @@ input[type=radio] {
     cursor: pointer;
 }
 
-/* Targets carousel container to set height and width, as well as centers and set animation style */
+/* Targets carousel container to set height and width, as well as centers and set the transform style */
 .dessert-options {
     width: 100%;
     max-width: 50%;
@@ -145,7 +146,7 @@ input[type=radio] {
     align-items: center;
 }
 
-/* Targets carousel cards and sizes them */
+/* Targets carousel cards, makes it a block and sizes them to mock up */
 .dessert-cards {
     position: relative;
     display: block;
@@ -160,11 +161,12 @@ input[type=radio] {
    object-fit: cover;
 }
 
+/* Adds faint box shadow to dessert images */
 .dessert img {
     box-shadow: 0px 0px 30px 0px rgba(81, 81, 81, 0.47);
 }
 
-/* Creates image carousel transitions using translate, scale and z-index */
+/* Creates image carousel transitions using translate, scale and z-index. Lines up to be side by side */
 
 #item-1:checked ~ .dessert-cards #dessert-3, #item-2:checked ~ .dessert-cards #dessert-1, #item-3:checked ~ .dessert-cards #dessert-2 {
     transform: translate(-90%) scale(.9);
@@ -191,40 +193,33 @@ input[type=radio] {
     padding-top: 505px;
 }
 
-/* Adds background colo to text */
-
+/* Adds background color and padding to text */
 .dessert-options-text {
     padding: 5%;
     background-color: #585191;
 }
 
-/* Align text and sets font color */ 
+/* Align text and sets font color for h1 in class of dessert-options-text, as well as sets font size and margins */ 
     .dessert-options-text h1 {
         color: white;
         text-align: center;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        margin-top: 10px;
     }
 
+/* Align text and sets font color for p in class of dessert-options-text as well as sets font size and line height */ 
     .dessert-options-text p {
         color: white;
         text-align: center;
+        font-size: 2.1rem;
+        line-height: 40px;
     }
 
-/* Sizes h1 for dessert options */
-.dessert-options-text h1 {
-    font-size: 3rem;
-    margin-bottom: 50px;
-    margin-top: 10px;
-}
-
-/* Sizes paragraph for dessert options */
-.dessert-options-text p {
-    font-size: 2.1rem;
-    line-height: 40px;
-}
 
 /*************************** ARROW ICON ***************************/
 
-/* Sizes, colors and centers arrow icon */
+/* Targets div containing arrow icon, adds padding, adjusts sizing, adds color and centers it to the page */
 .arrow-icon {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -235,20 +230,20 @@ input[type=radio] {
 
 /*************************** MOOD TEXT ***************************/
 
-/* Aligns text to center */
+/* Targets mood-text container, aligns it and changes the color */
 .mood-text {
     text-align: center;
     color: #EB5160;
 }
 
-/* Sizes and colors paragraph text */
+/* Targets paragraph of mood-text class, changes color, font size and adds line height */
 .mood-text p {
     color: #EB5160;
     font-size: 2.1rem;
     line-height: 40px;
 }
 
-/* Sizes and colors h1 */
+/* Targets h1 of mood-text class, adds margin and changes font size */
 .mood-text h1 {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -256,7 +251,7 @@ input[type=radio] {
 
 /*************************** IMAGE GALLERY ***************************/
 
-/* Targets gallery and sets flex, padding, border and background color */
+/* Targets gallery through carousel-2 class and adds padding, margin, background color and font. Uses flex and justifies content to center images */
 .carousel-2 {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -269,17 +264,16 @@ input[type=radio] {
     margin: 60px;
   }
 
-  /* Targets gallery images and sizes them as squares */
+  /* Targets gallery images and sizes them as squares and uses border radius to smoothen edges. Uses object-fit to cover items and adds slight box shadow */
   .carousel-2 img {
     width: 220px;
     height: 220px;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0px 0px 30px 0px rgba(81, 81, 81, 0.47);
-  
   }
 
-  /* Targets container to make images align themselves side-by-side */
+  /* Targets container to make images align themselves side-by-side using flex, justify content and flex-direction */
   .moods {
     display: flex;
     position: relative;
@@ -287,14 +281,14 @@ input[type=radio] {
     justify-content: center;
   }
 
-  /* Adds margins to creates spacing between images */
+  /* Targets mood-1 and mood-2 classes to add margins to creates spacing between images */
   .mood-1, .mood-2 {
     margin-right: 60px;
   }
 
     /***** ANIMATION FOR MOOD BOXES *****/
 
-    /* When hovering over a mood option, thhey continously scale */
+    /* When hovering over each mood option, they continously scale */
     .mood-3 img:hover {
         animation-name: Ygrow;
         animation-duration: 1.5s;
@@ -325,6 +319,7 @@ input[type=radio] {
         animation-timing-function: ease-in-out;
     }
 
+    /* Sets key frames so when at 100%, the image grows to max capacity and eases back to normal size */
     @keyframes Ygrow {
         0% {
             transform: scale(1);
