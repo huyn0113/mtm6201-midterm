@@ -69,12 +69,37 @@
                 <!-- Displays dessert image options -->
                 <div class="dessert-cards">
                     <label class="dessert" for="item-1" id="dessert-1">
-                    <img    src="images/unsplash_images/original_images/icecream_cake.jpg" 
+
+                    <!-- 770px and below  -->
+                    <source srcset="images/unsplash_images/icecream_cake-derivatives/icecream_cake-577_x_770.jpg 1x,
+                                images/unsplash_images/icecream_cake-derivatives/icecream_cake-1155_x_1540 2x"
+                            media="(max-width: 770px)">
+
+                    <!-- 1020px and above  -->
+                    <source srcset="images/unsplash_images/icecream_cake-derivatives/icecream_cake-765_x_1020 1x,
+                                    images/unsplash_images/icecream_cake-derivatives/icecream_cake-1530_x_2040 2x"
+                            media="(min-width: 1020px)">
+
+                    <!--Fallback img-->
+                    <img    src="images/unsplash_images/icecream_cake-derivatives/icecream_cake-577_x_770.jpg" 
                             alt="Image of a pink cake with a fake ice cream on top"
                             role="img">
+
                     </label>
                     <label class="dessert" for="item-2" id="dessert-2">
-                    <img    src="images/unsplash_images/original_images/cakepops.jpg" 
+
+                     <!-- 770px and below  -->
+                     <source srcset="images/unsplash_images/cakepops-derivatives/cakepops-511_x_770 1x,
+                                        images/unsplash_images/cakepops-derivatives/cakepops-1023_x_1540 2x"
+                            media="(max-width: 700px)">
+
+                    <!-- 1020px and above  -->
+                    <source srcset="images/unsplash_images/cakepops-derivatives/cakepops-678_x_1020 1x,
+                                    images/unsplash_images/cakepops-derivatives/cakepops-1356_x_2040 2x"
+                            media="(min-width: 1020px)">
+
+                    <!--Fallback img-->
+                    <img    src="images/unsplash_images/cakepops-derivatives/cakepops-511_x_770.jpg" 
                             alt="Close up image of cake pops"
                             role="img">
                     </label>
@@ -112,17 +137,53 @@
                 <!-- Div class containing mood images -->
                 <div class="moods">
                     <div class="mood-1">
-                        <img    src="images/unsplash_images/original_images/pastel_balloons.jpg" 
+
+                           <!-- 770px and below  -->
+                     <source srcset="images/unsplash_images/pastel_balloons-derivatives/pastel_balloons-770_x_512.jpg,
+                                       images/unsplash_images/pastel_balloons-derivatives/pastel_balloons-1540_x_1026.jpg 2x"
+                            media="(max-width: 700px)">
+
+                    <!-- 1020px and above  -->
+                    <source srcset="images/unsplash_images/pastel_balloons-derivatives/pastel_balloons-1020_x_679.jpg,
+                                    images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-2040_x_1360 2x"
+                            media="(min-width: 1020px)">
+
+                         <!--Fallback img-->
+                        <img    src="images/unsplash_images/pastel_balloons-derivatives/pastel_balloons-770_x_512.jpg" 
                                 alt="A bunch of pastel balloons with happy faces"
                                 role="img">
                     </div>
                     <div class="mood-2">
-                        <img    src="images/unsplash_images/original_images/pug_in_outfit.jpg" 
+
+                        <!-- 770px and below  -->
+                     <source srcset="images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-552_x_770.jpg 1x,
+                                        images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-1105_x_1540 2x"
+                            media="(max-width: 700px)">
+
+                    <!-- 1020px and above  -->
+                    <source srcset="images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-732_x_1020,
+                                    images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-1464_x_2040 2x"
+                            media="(min-width: 1020px)">
+
+                         <!--Fallback img-->
+                        <img    src="images/unsplash_images/pug_in_outfit-derivatives/pug_in_outfit-552_x_770.jpg" 
                                 alt="Sad looking pug dressed up in an outfit"
                                 role="img">
+
                     </div>
                     <div class="mood-3">
-                        <img    src="images/unsplash_images/original_images/peeking_cat.jpg" 
+
+                        <!-- 770px and below  -->
+                     <source srcset="images/unsplash_images/peeking_cat-derivatives/peeking_cat-770_x_511 1x,
+                                        images/unsplash_images/peeking_cat-1540_x_1023 2x"
+                            media="(max-width: 700px)">
+
+                    <!-- 1020px and above  -->
+                    <source srcset="images/unsplash_images/peeking_cat-derivatives/peeking_cat-1020_x_677 1x,
+                                    images/unsplash_images/peeking_cat-derivatives/peeking_cat-2040_x_1355 2x"
+                            media="(min-width: 1020px)">
+                         <!--Fallback img-->
+                        <img    src="images/unsplash_images/peeking_cat-derivatives/peeking_cat-770_x_511.jpg" 
                                 alt="Image of frustrated looking cat"
                                 role="img">
 
