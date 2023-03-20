@@ -94,8 +94,21 @@
                     <h2 role="heading">Anna Hawkins</h2>
                     <h3 role="heading">Founder</h3>
                     <!--Team member 1 img-->
-                    <img src="images/unsplash_images/portrait_of_woman_pastry_chef/portrait_of_woman_pastry_chef-365_x_480.jpg" 
+
+                    <!-- 770px and below  -->
+                        <source srcset="images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-586_x_770 1x,
+                                        images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-1172_x_1540 2x"
+                                media="(max-width: 700px)">
+
+                        <!-- 1020px and above  -->
+                        <source srcset="images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-776_x_1020.jpg 1x,
+                                        images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-1553_x_2040.jpg 2x"
+                                media="(min-width: 1020px)">
+
+                    <!-- Fallback image -->
+                    <img src="images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-586_x_770.jpg" 
                         alt="Portrait image of a woman in chef attire"
+
                         role="img">
                     <p role="text">Hi! My name is Anna and I'm the founder of Wonder Sweets! I am super excited to share my journey of taking on the world by storm with our Wonder Treats. After taking comissions personally, I realized that I had such a great passion for Wonder Sweets and wanted to expand on it. Now here I am along with my team!</p>
                 </div>
@@ -104,7 +117,19 @@
                     <h2 role="heading">Jamie Preston</h2>
                     <h3 role="heading">Head Pastry Chef</h3>
                     <!--Team member 2 image-->
-                    <img src="images/unsplash_images/man_pastry_chef_portrait-derivatives/man_pastry_chef_portrait-320_x_480.jpg" 
+
+                        <!-- 770px and below  -->
+                        <source srcset="images/unsplash_images/man_pastry_chef_portrait-derivatives/man_pastry_chef_portrait-513_x_770.jpg 1x,
+                                        images/unsplash_images/man_pastry_chef_portrait-derivatives/man_pastry_chef_portrait-1026_x_1540.jpg 2x"
+                                media="(max-width: 700px)">
+
+                        <!-- 1020px and above  -->
+                        <source srcset="images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-680_x_1020.jpg 1x,
+                                        images/unsplash_images/portrait_of_woman_pastry_chef-derivatives/portrait_of_woman_pastry_chef-1360_x_2040.jpg 2x"
+                                media="(min-width: 1020px)">
+
+                    <!-- Fallback image -->
+                    <img src="images/unsplash_images/man_pastry_chef_portrait-derivatives/man_pastry_chef_portrait-513_x_770.jpg" 
                         alt="Portrait image of a male pastry chef"
                         role="img">
                     <p role="text">Hey there, my name is Jamie and I'm the head pastry chef of Wonder Sweets! I've known Anna ever since we were in high school and we both shared the same passion for baking. When she first brought of the idea of expanding her little business venture, I immediately volunteered myself as the head of the kitchen.</p>
