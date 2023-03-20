@@ -333,13 +333,13 @@ input[type=radio] {
 
 /*************************** CREATE BUTTON ***************************/
 
-/* Sets button container as a block and aligns it to the center */
+/* Targets container containing create button, sets it as a block and centers it */
 .create {
     display: block;
     text-align: center;
   }
 
-/* Customizes button appearance */
+/* Targets button in create container, adjusts button sizing using width, height and font size and font family. Adds a background color and radius as well a custom pointer */
   .create button {
     width: 300px;
     height: 100px;
@@ -365,7 +365,7 @@ input[type=radio] {
 
     /***** ANIMATION FOR BUTTON *****/
 
-    /* Create button continously changes colors */
+    /* Targets button and sets continous animation elements for color changing background */
     .create button{
         animation-name: changeBG;
         animation-duration: 2s;
@@ -376,6 +376,7 @@ input[type=radio] {
         animation-timing-function: ease-in-out;
     }
 
+    /* Sets animation key frames and sets 0% as starting color and 100% as ending color to switch to and from */
     @keyframes changeBG {
         0% {
             background-color: #EB5160;
@@ -388,6 +389,7 @@ input[type=radio] {
 
   /*************************** NOTE TEXT BOX  ***************************/
 
+  /* Targets container of note, sets it as a grid and lays out columns, rows, gaps and adds a border of 1px, solid and green */
   .note {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -396,6 +398,7 @@ input[type=radio] {
     border: 1px solid #EB5160;
   }
 
+  /* Targets container note-img, displays it as a grid and sets start and ending points as well as sets the opacity */
   .note-img {
     display: grid;
     opacity: 0.8;
@@ -403,6 +406,7 @@ input[type=radio] {
     grid-row: 1 / 1;
   }
 
+  /* Targets container of note-text, displays it as a grid and sets start and end, as well as padding */
   .note-text {
     display: grid;
     padding: 30px;
@@ -410,6 +414,7 @@ input[type=radio] {
     grid-row: 1 / 1;
   }
 
+  /* Targets h1 of note-text container, sets the font size, color, padding and aligns text to left */
   .note-text h1  {
     font-size: 1.5rem;
     padding-top: 30px;
@@ -419,6 +424,7 @@ input[type=radio] {
   
   }
 
+  /* Targets p of note-text container, sets line height, font size, color and aligns text to left */
   .note-text p {
     line-height: 40px;
     font-size: 1.5rem;
