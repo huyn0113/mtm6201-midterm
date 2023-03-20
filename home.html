@@ -15,7 +15,9 @@
 <body>
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
+    <!-- Unordered list containing skip links -->
     <ul class="skip-links" role="list">
+        <!-- List items with on page links -->
         <li role="listitem"><a href="#nav" aria-label="Takes you to the nav bar" role="link">Skip to nav</a></li>
         <li role="listitem"><a href="#dessert" aria-label="Takes you dessert type options" role="link">Skip to types of dessert</a></li>
         <li role="listitem"><a href="#emotions" aria-label="Takes you to mood choices" role="link">Skip to mood choices</a></li>
@@ -24,21 +26,29 @@
 </div>
 <!--HEADER CONTENT -->
 <header class="banner" id="nav" role="banner">
+    <!-- Div with class to contain banner image -->
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
+    <!--Navigation containing links to other pages -->
     <nav class="navigation-bar" role="navigation" >
+        <!-- Unordered lists containing list items -->
         <ul class="menu-1" role="list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <!-- List items with links -->
             <li role="listitem" itemprop="url"><a href="about.html">About</a></li>
             <li role="listitem" itemprop="url"><a href="contact.html">Contact</a></li>
         </ul>
+        <!--Div class containing logo -->
         <div class="logo">
+            <!-- Link containing home.html through an image -->
             <a href="home.html" role="link" itemscope="image">
                 <img    src="images/logo/wonder_sweets.png" 
                         alt="Logo of Wonder Sweets" 
                         role="img"></a>
         </div>
+        <!-- Unordered lists containing list items -->
         <ul class="menu-2" role="list">
+            <!-- List item with button/searchbox inside -->
             <li class="searchbox" role="listitem" itemprop="url">
                 <input type="text" placeholder="search...">
                 <button type="submit"i class="fa fa-search"></button>
@@ -48,14 +58,15 @@
 </header>
 <!-- MAIN BODY CONTENT -->
     <main role="main">
-        <!-- DESSERT OPTIONS -->
+        <!-- DESSERT OPTIONS CAROUSEL -->
         <div class="carousel" id="dessert" role="contentinfo">
+        <!-- Div class containing dessert option inputs -->
         <div class="dessert-options">
-            <!-- Labels dessert options and selects primary image -->
+            <!-- Sets dessert options as radio slider -->
             <input type="radio" name="slider" id="item-1" checked>
             <input type="radio" name="slider" id="item-2"> 
             <input type="radio" name="slider" id="item-3">
-                <!-- Dessert images with labels -->
+                <!-- Displays dessert image options -->
                 <div class="dessert-cards">
                     <label class="dessert" for="item-1" id="dessert-1">
                     <img    src="images/unsplash_images/original_images/icecream_cake.jpg" 
@@ -75,27 +86,30 @@
                 </div>
         </div>
         </div>
+        <!-- Div class containing dessert option info -->
         <div class="dessert-options-container" role="contentinfo">
+            <!-- Div class containing dessert option info text -->
             <div class="dessert-options-text">
-                <!-- Selection heading title -->
                 <h1 role="heading"> Choose Your Type of Dessert! </h1>
-                <!-- Paragraphs containing content -->
                 <p role="text">In order to start off with your personalized emotion-based flavoured treat, please choose the form in which you want it delivered in!</p>
                 <p role="text">To mention, the design of the dessert won't be what is displayed! Based on the emotion chosen, the design will be based on that!</p>
             </div>
         </div>
-        <!-- Arrow icon -->
+        <!-- Div class containing arrow icon -->
         <div class="arrow-icon" role="complementary">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
         <!-- Section containing mood options -->
         <div class="emotion-options" id="emotions" role="contentinfo">
+            <!-- Section containing mood options text -->
             <div class="mood-text">
                 <h1 role="heading">Choose Your Mood!</h1>
                 <p role="text">Now that you have chosen your type of dessert, how are you feeling?</p>
                 <p role="text">What emotion are you looking to feel and taste through your treat?</p>
             </div>
+            <!-- Div class containing image gallery -->
             <div class="carousel-2">
+                <!-- Div class containing mood images -->
                 <div class="moods">
                     <div class="mood-1">
                         <img    src="images/unsplash_images/original_images/pastel_balloons.jpg" 
@@ -115,6 +129,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Div class containing button -->
             <div class="create" role="button">
                 <button type="button" role="button">Create!</button>
             </div>
@@ -122,13 +137,15 @@
                 <p role="text">Get your wonder mood treat now!</p>
             </div>
         </div>
+        <!-- Div class containing notes -->
         <div class="note" id="note" role="contentinfo">
-            <!-- Placeholder Image -->
+            <!-- Note image -->
             <div class="note-img">
              <img    src="images/unsplash_images/girls_laughing-derivatives/girls_laughing-480_x_293.jpg" 
                     alt="Two girls laughing outside of a store with drinks in their hands"
                     role="img">
             </div>
+            <!-- Div containing note text -->
             <div class="note-text">
                 <h1 role="heading">Thank you for choosing us!</h1>
                 <p role="text">Our bakery uses the most finest ingredients ensuring that every treat is made with the utmost attention to detail.</p>
@@ -137,6 +154,7 @@
     </main>
 <!-- FOOTER CONTENT-->
     <footer role="contentinfo">
+        <!--Text containing copyright information and skip to top button -->
         <p role="text">2023 &#169; Wonder Sweets</p>
         <p role="text"><a href="#top">Back to top</a></p>
     </footer>

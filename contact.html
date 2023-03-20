@@ -15,7 +15,9 @@
 <body>
 <!--SKIP LINKS -->
 <div class="skip-container" id="top">
+    <!-- Unordered list containing list items -->
     <ul class="skip-links" role="list">
+        <!-- List items with on page links -->
         <li role="listitem"><a href="#nav" aria-label="Takes you to nav bar">Skip to nav</a></li>
         <li role="listitem"><a href="#contact" aria-label="Takes you to contact info">Skip to contact info</a></li>
         <li role="listitem"><a href="#form" aria-label="Takes you to the contact form">Skip to contact form</a></li>
@@ -23,21 +25,29 @@
 </div>
 <!--HEADER CONTENT -->
 <header class="banner" id="nav" role="banner">
+    <!-- Div with class to contain banner image -->
     <div class="banner-img">
     </div>
     <!-- NAVIGATION BAR -->
+    <!--Navigation containing links to other pages -->
     <nav class="navigation-bar" role="navigation" >
+        <!-- Unordered lists containing list items -->
         <ul class="menu-1" role="list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <!-- List items with links -->
             <li role="listitem" itemprop="url"><a href="about.html">About</a></li>
             <li role="listitem" itemprop="url"><a href="contact.html">Contact</a></li>
         </ul>
+        <!--Div class containing logo -->
         <div class="logo">
+            <!-- Link containing home.html through an image -->
             <a href="home.html" role="link" itemscope="image">
                 <img    src="images/logo/wonder_sweets.png" 
                         alt="Logo of Wonder Sweets" 
                         role="img"></a>
         </div>
+        <!-- Unordered lists containing list items -->
         <ul class="menu-2" role="list">
+            <!-- List item with button/searchbox inside -->
             <li class="searchbox" role="listitem" itemprop="url">
                 <input type="text" placeholder="search...">
                 <button type="submit"i class="fa fa-search"></button>
@@ -47,33 +57,37 @@
 </header>
 <!-- MAIN BODY CONTENT -->
     <main role="main">
+        <!-- Div containing contact info -->
         <div class="contact-info" id="contact" role="contentinfo">
+            <!-- Div containing contact info text -->
             <div class="contact-text">
                 <h1 role="heading">Want to Get in Touch with Us?</h1>
                 <p role="text">We would love to hear from you! To get in touch with us, you can contact us via information below, and we'll make sure to respond as soon as possible. We value your feedback, comments, and inquiries, so don't hesitate to reach out to us with any questions or concerns you may have. Thank you for choosing us, and we look forward to hearing from you soon!</p>
             </div>
+            <!-- Div containing contact image -->
             <div class="contact-img">
                 <img    src="images/unsplash_images/original_images/pink_and_blue_donuts.jpg" 
                         alt="Decorated donuts divided into two sides by a pink and blue margin"
                         role="img">
             </div>
         </div>
-            <!--Contact form-->
+            <!--Div containing contact form-->
             <div class="contact-form" id="form">
-                <form action="contact.html" method="post" role="form">
-
+                <!-- Inserts contact form -->
+                <form action="contact.html" method="post" role="form" itemscope itemtype="https://schema.org/ContactPage">
+                <!-- Input and label for name -->  
                 <label for="name">Your Name</label>
-                <input type="text" name="yourname" id="name" placeholder="Full Name">
-
+                <input type="text" name="yourname" id="name" placeholder="Full Name" itemprop="text">
+                <!-- Input and label for email --> 
                 <label for="text">Your Email</label>
-                <input type="text" name="youremail" id="email" placeholder="here@email.com">
-
+                <input type="text" name="youremail" id="email" placeholder="here@email.com" itemprop="text">
+                <!-- Input and label for email subject -->
                 <label for="subject">The Subject</label>
-                <input type="text" name="thesubject" id="subject" placeholder="Subject">
-
+                <input type="text" name="thesubject" id="subject" placeholder="Subject" itemprop="text"> 
+                <!-- Textarea and label for message -->
                 <label for="message">Your Message</label>
-                <textarea name="yourmessage" id="message"></textarea>
-
+                <textarea name="yourmessage" id="message" itemprop="text"></textarea>
+                <!--Input type for submit button -->
                 <input type="submit" value="submit">
 
                 </form>
@@ -82,6 +96,7 @@
     </main>
 <!-- FOOTER CONTENT-->
     <footer role="contentinfo">
+        <!--Text containing copyright information and skip to top button -->
         <p role="text">2023 &#169; Wonder Sweets</p>
         <p role="text"><a href="#top">Back to top</a></p>
     </footer>
