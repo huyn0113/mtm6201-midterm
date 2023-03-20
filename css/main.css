@@ -724,7 +724,7 @@ input[type=radio] {
 
     /* Changes size of logo image */
     .logo img {
-        width: 300px;
+        width:400px;
     }
 
     /* Targets specific list item in navigation-container and uses padding to adjust space between menu links */
@@ -771,6 +771,36 @@ input[type=radio] {
 
 /*************************** ABOUT PAGE  ***************************/
   
-    .
+    /* Targets about-text container's p and makes font size smaller */
+    .about-text p {
+        font-size: 1.5rem;
+    }
 
+    /* Targets backstory-content p and makes the fotn size smaller */
+    .backstory-content p {
+        font-size: 1.5rem;
+    }
+
+    /* Targets backstory-content container and changes padding as well as margin to encompass font sizing better */
+    .backstory-content {
+        padding: 70px;
+        margin: 40px;
+    }
+
+    /* Targets about-the-team p and makes the font size smaller */
+    .about-the-team p {
+        font-size: 1.5rem;
+    }
+
+   /* Targets team-members imgs and makes them smaller */ 
+    .team-members img {
+        width: 30%;
+    }
+
+    /* Targets team-members p and makes them smaller */ 
+    .team-members p {
+        font-size: 1.5rem;
+    }
+
+  
 }
