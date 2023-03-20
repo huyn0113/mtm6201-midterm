@@ -802,5 +802,26 @@ input[type=radio] {
         font-size: 1.5rem;
     }
 
+/*************************** CONTACT PAGE  ***************************/
+
+    /* Targets contact-img image and makes it smaller using width */
+    .contact-img img {
+        width: 100%;
+    }
+
+    /* Targets contact-text h1, makes font size bigger and adds padding */
+    .contact-text h1 {
+        font-size: 6rem;
+        padding-top: 90px;
+        
+    }
+
+     /* Targets contact-text p and makes font size bigger and adds line height */
+     .contact-text p {
+        font-size: 2rem;
+        line-height: 60px;
+     }
+
+
   
 }
