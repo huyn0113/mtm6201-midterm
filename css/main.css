@@ -434,10 +434,12 @@ input[type=radio] {
 
   /*************************** FOOTER ***************************/
 
+  /* Targets footer element and adds padding to top */
   footer {
     padding-top: 50px;
   }
 
+  /* Targets p of footer element, aligns text to right, changes color, font family, font size and adds padding */
   footer p {
     text-align: right;
     color: #585191;
@@ -449,7 +451,8 @@ input[type=radio] {
 
 
 /*************************** CONTACT PAGE PAGE ***************************/
-/* Targets contact container and makes it a grid */
+
+/* Targets contact container and displays it as a grid and adds gaps and a background color */
 .contact-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -459,11 +462,14 @@ input[type=radio] {
 
 }
 
+/* Targets contact-text container, displays it as a grid and adds padding */
 .contact-text {
     display: grid;
     padding: 30px;
+    grid-column: 2 / 3;
 }
 
+/* Targets h1 of contact-text container, changes font color, size, aligns it to the left and adds padding */
 .contact-text h1 {
     color: white;
     text-align: left;
@@ -471,6 +477,7 @@ input[type=radio] {
     font-size: 3rem;
 }
 
+/* Targets p of contact-text container, changes font color, size, aligns it to the left and adds padding */
 .contact-text p {
     color: black;
     font-size: 1.5rem;
@@ -479,15 +486,16 @@ input[type=radio] {
     text-align: left;
 }
 
+/* Targets contact-image container, displays it as a grid and sets position as well as adjust opacity */
 .contact-img {
     display: grid;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row: 1 / 2;
     opacity: 0.7;
 }
 
-/* Inquiries */
+/***** CONTACT FORM *****/
 
+/* targets contact-form container, adds border, padding and margin */
 .contact-form {
     border-radius: 10px;
     border: 2px solid #EB5160;
@@ -495,6 +503,7 @@ input[type=radio] {
     margin: 60px;
 }
 
+/* Targets contact form input and text area, adds margin and adjusts size using width and padding and sets it as a border-box */
 .contact-form input[type=text], textarea {
     width: 100%;
     padding:20px;
@@ -503,20 +512,24 @@ input[type=radio] {
     margin-top: 10px;
 }
 
+/* Targets text in contact form and sets the font size */
 .contact-form ::placeholder {
     font-size: 1.4rem;
 }
 
+/* Targets contact-form text area and sizes it using height element */
 .contact-form textarea {
     height: 200px;
 }
 
+/* Targets contact-form labels and adjusts label titles font sizes, font family and color */
 .contact-form label {
     font-size: 2rem;
     font-family: 'Luckiest Guy', cursive;
     color: #585191;
 }
 
+/* Targets contact-form button and sizes it using padding, margin, width, font family, color and font size */
 .contact-form input[type=submit] {
     padding: 20px;
     margin-top: 20px;
@@ -559,19 +572,18 @@ input[type=radio] {
     color: white;
 }
 
-/* Adds background color overlay over background image and changes opacity */
+/* Adds background color overlay over background image and changes opacity and adds padding*/
 .about-text {
     background-color: rgba(88, 81, 145, .8);
     padding: 30px;
 }
 
-
-/* Background Story */
+/* Targets backstory container and adds padding */
 .backstory {
     padding-bottom: 90px;
 }
 
-/* Aligns container */
+/* Targets backstory-content, centers content and adds padding as well a border to content */
 .backstory-content {
     justify-content: center;
     align-items: center;
@@ -581,6 +593,7 @@ input[type=radio] {
     padding: 80px;
 }
 
+/* Targets backstory-content h2, changes font family, font size, color, adds an underline and padding */
 .backstory-content h2 {
     font-family: 'Luckiest Guy', cursive;
     font-size: 3rem;
@@ -590,6 +603,7 @@ input[type=radio] {
 
 }
 
+/* Targets backstory-content p and adds color, changes font size, changes line height and adds padding */
 .backstory-content p {
     color:  #EB5160;
     font-size: 2rem;
@@ -597,7 +611,9 @@ input[type=radio] {
     padding-bottom: 20px;
 }
 
-/* About team members */
+/**** TEAM MEMBERS ****/
+
+/* targets team-member images, changes size using width, displays it as a block and uses margin to center them. Rounds the corners with border-radius and adds a solid outline */
 .the-team img {
     width: 50%;
     display: block;
@@ -607,21 +623,25 @@ input[type=radio] {
     border: 6px solid #d9de9f;
 }
 
+/* Targets the-team container and adds a background color */
 .the-team {
     background-color: #EB5160;
 }
 
+/* Targets about-the-team content, aligns text to center and adds padding */
 .about-the-team {
     text-align: center;
     padding: 50px;
 }
 
+/* Targets about-the-team h1, changes font color, font size and adds padding */
 .about-the-team h1 {
     color: white;
     font-size: 4rem;
     padding-bottom: 30px;
 }
 
+/* Targets about-the-team p, changes font color, font size, adds padding and adds line height */
 .about-the-team p {
     font-size: 2rem;
     color: white;
@@ -629,6 +649,7 @@ input[type=radio] {
     padding-bottom: 20px;
 }
 
+/* Targets team-members h2, changes color, font size, font family, background color, centers content and adds padding */
 .team-members h2 {
     color: white;
     text-align: center;
@@ -639,6 +660,7 @@ input[type=radio] {
     margin-bottom: 20px;
 }
 
+/* Targets team-members h3, changes color, font size, font family, background color, centers content, adds margin and adds an underline */
 .team-members h3 {
     color: white;
     text-align: center;
@@ -649,6 +671,7 @@ input[type=radio] {
     text-decoration: underline;
 }
 
+/* targets team member p, changes color, font size, line height, centers the text and adds padding & margin */
 .team-members p {
     color: white;
     font-size: 2rem;
@@ -660,12 +683,15 @@ input[type=radio] {
 }
 
 /*************************** SKIP LINKS ***************************/
+
+/* Targets skip-links container and gets rid of styling */
 .skip-links {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
+  /* Targets skip-links links, positions it on the page, hides them and only makes them responsive to the tab key */
   .skip-links a {
     position: absolute;
     top: -3em;
@@ -673,15 +699,12 @@ input[type=radio] {
     color: white;
     padding: .5em 1em;
     font-size: 2rem;
-    
-   
+     
   }
   
   .skip-links a:focus {
     top: 0;
   }
-
-   
 
 /*************************** LAPTOP SET UP | 760PX ***************************/
 
@@ -704,33 +727,41 @@ input[type=radio] {
         width: 300px;
     }
 
+    /* Targets specific list item in navigation-container and uses padding to adjust space between menu links */
     .navigation-bar li:nth-child(1) {
         padding-right: 50px;
     }
 
+    /* Targets dessert-cards container and adjusts width to stay contained to the site width */
     .dessert-cards {
         width: 70%;
+    }
+
+/*************************** CREATE BUTTON  ***************************/
+
+    /* Targets button-text container and adds padding to the bottom */
+    .button-text {
+        padding-bottom: 30px;
     }
     
 /*************************** NOTE PAGE  ***************************/
 
+    /* Targets note container's h1 and changes the font size */
     .note h1 {
-        font-size: 3rem;
-        padding-bottom: 0px;
+        font-size: 2.5rem;
     }
 
+    /* Targets note container's p and changes the font size */
     .note p {
         font-size: 2rem;
     }
 
-    .note img {
-        width: 100%;
-    }
-
+    /* Targets note-img container and adds padding to the right */
     .note-img {
-        padding-right: 60px;
+        padding-right: 40px;
     }
 
+    /* Targets note-text container and adds padding */
     .note-text {
         padding: 10px;
         padding-top: 60px;
@@ -738,15 +769,8 @@ input[type=radio] {
 
     }
 
-    .button-text {
-        padding-bottom: 30px;
-    }
-
 /*************************** ABOUT PAGE  ***************************/
-    .the-team img{
-        width: 20%;
-       
-    }
-   
+  
+    .
 
 }
